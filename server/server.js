@@ -16,8 +16,6 @@ const errorHandlers = require("./handlers/errorHandlers");
 app.use(errorHandlers.notFound);
 if (process.env.ENV === "DEVELOPMENT") {
   app.use(errorHandlers.developmentErrors);
-} else {
-  app.use(errorHandlers.productionErrors);
 }
 
 app.use('/api/messages', messages);

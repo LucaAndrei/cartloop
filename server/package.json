@@ -6,8 +6,8 @@
     "scripts": {
         "start": "node server.js",
         "server": "nodemon server.js",
-        "client": "npm start --prefix cartloop-chat",
-        "dev": "concurrently \"npm run server\" \"npm run cartloop-chat\""
+        "client": "npm start --prefix ../cartloop-chat",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
     },
     "author": "Andrei Luca",
     "license": "MIT",

@@ -1,5 +1,5 @@
 exports.developmentErrors = (err, req, res, next) => {
-  err.stack = err.stack || "";
+  err.stack = err.stack || '';
   const errorDetails = {
     message: err.message,
     status: err.status,
@@ -11,6 +11,6 @@ exports.developmentErrors = (err, req, res, next) => {
 
 exports.notFound = (req, res, next) => {
   res.status(404).json({
-    message: "Route not found"
+    message: 'Route not found'
   });
 };
